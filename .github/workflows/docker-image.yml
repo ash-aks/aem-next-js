@@ -1,13 +1,6 @@
 name: Docker Image CI
 
 on: 
-  workflow_dispatch:
-      inputs:
-            fullBuild:
-              description: 'Run a full build'
-              type: boolean
-              required: false
-              default: false
   push:
     branches: [ "main" ]
   pull_request:
